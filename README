@@ -1,0 +1,3 @@
+Simple project to test express and mongoose. The idea is to strip out all views and higher level functionality from express and use it as a basic REST router framework.
+
+Requirements: Only express and mongoose. 
