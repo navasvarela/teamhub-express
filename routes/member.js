@@ -8,7 +8,7 @@ var index = function(req,res) {
 
 var save_member = function(req,res) {
   console.log('save_member');
-  var member = new Member;
+  var member = new Member();
   
   ['name', 'initial', 'email'].forEach(function(field) {
 	if (typeof(field) !== 'undefined') {
@@ -22,7 +22,7 @@ var save_member = function(req,res) {
       console.log(err);
   });
   res.send('OK');
-}
+};
 
 module.exports = function(app) {
    app.get('/members', index);
